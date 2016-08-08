@@ -1,0 +1,35 @@
+#!/usr/bin/python
+import smtplib
+import optparse
+from email.mime.text import MIMEText
+
+'''if __name__ == '__main__':
+    parser = optparse.OptionParser()
+    parser.add_option('-c', '--content', default='', help='message for mail')
+    parser.add_option('-m', '--mail', default='', help='email of client')
+    parser.add_option('-n', '--name', default='', help='name')
+
+    (options, args) = parser.parse_args()
+    if options.mail != '':
+        import pdb;pdb.set_trace()
+        main_mail(options.name, options.mail, options.content)'''
+
+'''def main_mail(name, mail, content):'''
+TO = ['aravind@headrun.com']
+msg = MIMEText('hi how are you')
+msg['Subject'] = 'The Contents' 
+msg['From'] = 'Headrun Contact'
+msg['To'] = 'aravind@headrun.com'
+
+
+
+
+# Send the mail
+try:
+    s = smtplib.SMTP_SSL('smtp.gmail.com', 465)
+    s.login('head201509@gmail.com', 'head201509$')
+    s.sendmail('head201509@gmail.com' , TO[0], msg.as_string())
+    s.quit()
+    print 'Done'
+except:
+    pass

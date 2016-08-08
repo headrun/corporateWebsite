@@ -1,0 +1,90 @@
+{% extends "base_headrun.html" %}
+{% block header_one %}
+
+{% endblock %}
+
+{% block contact %}
+	<!-- PAGE TITLE
+================================================== -->
+	<section class="pageheader-default text-center">
+	<div class="semitransparentbg">
+		<h1 class="animated fadeInLeftBig notransition">Contact</h1>
+		<p class="animated fadeInRightBig notransition container page-description">
+			 You can reach us with your queries or feedback<br>
+		</p>
+	</div>
+	</section>
+	<div class="wrapsemibox">
+		<div class="semiboxshadow text-center">
+			<img src="/static/img/shp.png" class="img-responsive" alt="">
+		</div>
+		<!-- CONTACT
+================================================== -->
+		<iframe class="gmap" style="width:100%;height:370px;border: 0;margin-top:-40px;z-index: 1;position: relative;" src="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=Headrun,+Bengaluru,+Karnataka,+India&aq=0&oq=headrun,+&sll=37.0625,-95.677068&sspn=39.371738,86.572266&t=m&ie=UTF8&hq=Headrun,&hnear=Bangalore,+Bengaluru+Rural,+Karnataka,+India&ll=12.914222,77.619095&spn=0.08366,0.085487&z=12&iwloc=A&output=embed">
+		</iframe>
+		<section class="container">
+		<div class="row">
+			<div class="col-md-8 animated fadeInLeft notransition">
+				<h1 class="smalltitle">
+				<span>Get in Touch</span>
+				</h1>
+				<div class="done">
+						<div class="alert alert-success">
+							<button type="button" class="close" data-dismiss="alert">×</button>
+							Your message has been sent. Thank you!
+						</div>
+					</div>
+					<form method="get" action="contact.php" id="contactform">
+						<div class="form">
+							<input class="col-md-6" type="text" name="name" placeholder="Name">
+							<input class="col-md-6" type="text" name="email" placeholder="E-mail">
+							<textarea class="col-md-12" name="comment" rows="7" placeholder="Message"></textarea>
+							<input type="submit" id="submit" class="btn" value="Send">
+						</div>
+					</form>
+			</div>
+			<div class="col-md-4 animated fadeInRight notransition">
+				<h1 class="smalltitle">
+				<span>Contacts</span>
+				</h1>
+				<p>
+				</p>
+
+				<h4 class="font100">HQ Office</h4>
+				<ul class="unstyled">
+					<li><span style="margin-right:5px;"><i class="icon-map-marker"></i></span>3rd Floor, 4, 80 Feet Main Road, S T Bed Layout, Koramangala,  Bengaluru, Karnataka 560034</li>
+					<li><span style="margin-right:3px;"><i class="icon-phone"></i></span> +91 80 26783274</li>
+					<li><span style="margin-right:2px;"><i class="icon-envelope"></i></span> Email: <a href="mailto:aravind@headrun.com">contact@headrun.com</a></li>
+				</ul>
+				<h4 class="font100">Other Branches</h4>
+				<ul class="unstyled">
+					<li><span style="margin-right:5px;"><i class="icon-map-marker"></i></span>Hyderabad</li>
+					<li><span style="margin-right:3px;"><i class="icon-map-marker"></i></span>Chirala</li>
+					<li><span style="margin-right:2px;"><i class="icon-map-marker"></i></span> Nellore</li>
+				</ul>
+				
+			</div>
+		</div>
+		</section>
+
+<!-- /.wrapbox ends-->
+<!-- SCRIPTS, placed at the end of the document so the pages load faster
+================================================== -->
+<script src="/static/js/jquery.js"></script>
+<script src="/static/js/bootstrap.js"></script>
+<script src="/static/js/plugins.js"></script>
+<script src="/static/js/common.js"></script>
+<script>
+
+$(document).ready(function(){
+	$('#home').removeClass('active');
+	$('#pages').removeClass('active');
+	$('#portfolio').removeClass('active');
+	$('#features').removeClass('active');
+	$('#blog').removeClass('active');
+	$('#contact').addClass('active');
+});
+</script>
+
+
+{% endblock %}

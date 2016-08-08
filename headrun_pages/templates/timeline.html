@@ -1,0 +1,130 @@
+{% extends "base_headrun.html" %}
+{% block header_one %}
+
+{% endblock %}
+
+{% block header_footer %}
+	<!-- PAGE TITLE
+================================================== -->
+	<section class="pageheader-default text-center">
+	<div class="semitransparentbg">
+		<h1 class="animated fadeInLeftBig notransition">Timeline</h1>
+		<p class="animated fadeInRightBig container page-description notransition">
+			 What we have achieved over the years, <br>
+			 It can not/never be bound by words but you know what? Let us give it a try ..!
+		</p>
+	</div>
+	</section>
+	<div class="wrapsemibox">
+		<div class="semiboxshadow text-center">
+			<img src="/static/img/shp.png" class="img-responsive" alt="">
+		</div>
+		<!-- TIMELINE
+================================================== -->
+		<section class="grayarea container animated fadeInUpBig notransition ">
+		<div class="row">
+			<div class="col-md-12">
+				<ul class="cbp_tmtimeline">
+					<li>
+					<time class="cbp_tmtime" datetime="2010-04-10 18:30"><span>10/4/2010</span></time>
+					<div class="cbp_tmicon">
+						<i class="icon-lightbulb"></i>
+					</div>
+					<div class="cbp_tmlabel">
+						<h2>Founded In 2010</h2>
+						<p>
+							Headrun was started in 2010 in Bangalore, India with the goal of building a company capable of applying advanced technology to solve practical problems - an accelerator of applied computer science. What started as a two member team hacking away on code in a spare bedroom has grown exponentially to 75 buzzing headrunners.
+						</p>
+					</div>
+					</li>
+					<li>
+					<time class="cbp_tmtime" datetime="2011-11-04T12:04"><span>11/04/2011</span></time>
+					<div class="cbp_tmicon">
+						<i class="icon-reorder"></i>
+					</div>
+					<div class="cbp_tmlabel">
+						<h2>Technology</h2>
+						<p>
+							We started as data miners crawling the web and providing pruned data to our clients in the form of json and transformed ourselves to data scientists now. Yes, we have gathered that humongous data over years.
+
+						</p>
+					</div>
+					</li>
+					<li>
+					<time class="cbp_tmtime" datetime="2012-04-13 05:36"><span>13/04/2012</span></time>
+					<div class="cbp_tmicon">
+						<i class="icon-bolt"></i>
+					</div>
+					<div class="cbp_tmlabel">
+						<h2>Cloud</h2>
+						<p>
+							 When it comes to migrations, we follow the Django way. We've witnessed and adapted to the storage transformation from Servers to Cloud.
+						</p>
+					</div>
+					</li>
+					<li>
+					<time class="cbp_tmtime" datetime="2013-04-15 13:15"><span>15/4/2012</span></time>
+					<div class="cbp_tmicon">
+						<i class="icon-microphone"></i>
+					</div>
+					<div class="cbp_tmlabel">
+						<h2>Python on LAMP stack</h2>
+						<p>
+							 Specialized in Python language on LAMP Stack. 
+						</p>
+					</div>
+					</li>
+					<li>
+					<time class="cbp_tmtime" datetime="2016-03-02 21:30"><span>2/3/2016</span></time>
+					<div class="cbp_tmicon">
+						<i class="icon-globe"></i>
+					</div>
+					<div class="cbp_tmlabel">
+						<h2>75 Buzzing Headrunners</h2>
+						<p>
+							 Fast growing tech startups
+						</p>
+					</div>
+					</li>
+					<li>
+					<!--<time class="cbp_tmtime" datetime="2013-04-17 12:11"><span>4/17/13</span></time>
+					<div class="cbp_tmicon">
+						<i class="icon-cloud"></i>
+					</div>
+					<div class="cbp_tmlabel">
+						<h2>Greens radish arugula</h2>
+						<p>
+							 Caulie dandelion maize lentil collard greens radish arugula sweet pepper water spinach kombu courgette lettuce. Celery coriander bitterleaf epazote radicchio shallot winter purslane collard greens spring onion squash lentil. Artichoke salad bamboo shoot black-eyed pea brussels sprout garlic kohlrabi.
+						</p>
+					</div>
+					</li>
+					<li>
+					<time class="cbp_tmtime" datetime="2013-04-18 09:56"><span>4/18/13</span></time>
+					<div class="cbp_tmicon">
+						<i class="icon-rocket"></i>
+					</div>
+					<div class="cbp_tmlabel">
+						<h2>Sprout garlic kohlrabi</h2>
+						<p>
+							 Parsnip lotus root celery yarrow seakale tomato collard greens tigernut epazote ricebean melon tomatillo soybean chicory broccoli beet greens peanut salad. Lotus root burdock bell pepper chickweed shallot groundnut pea sprouts welsh onion wattle seed pea salsify turnip scallion peanut arugula bamboo shoot onion swiss chard. Avocado tomato peanut soko amaranth grape fennel chickweed mung bean soybean endive squash beet greens carrot chicory green bean. Tigernut dandelion sea lettuce garlic daikon courgette celery maize parsley komatsuna black-eyed pea bell pepper aubergine cauliflower zucchini. Quandong pea chickweed tomatillo quandong cauliflower spinach water spinach.
+						</p>
+					</div>
+					</li>-->
+				</ul>
+			</div>
+		</div>
+		</section>
+
+
+<script src="/static/js/jquery.js"></script>
+<script>
+$(document).ready(function(){
+	$('#home').removeClass('active');
+	$('#portfolio').removeClass('active');
+	$('#contact').removeClass('active');
+	$('#pages').addClass('active');
+});
+
+</script>
+
+{% endblock %}
